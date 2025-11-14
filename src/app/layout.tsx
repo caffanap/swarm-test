@@ -3,6 +3,7 @@ import "./globals.css";
 import "./fonts.css";
 import Navbar from "@/components/base/navbar";
 import Footer from "@/components/base/footer";
+import ProgressBar from "@/components/base/progress-bar";
 
 export const metadata: Metadata = {
   title: "SWARM AI",
@@ -20,7 +21,8 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <Navbar />
-        <main className="min-h-screen w-full">
+        <ProgressBar />
+        <main className="w-full relative">
           {children}
         </main>
         <Footer />

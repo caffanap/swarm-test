@@ -8,15 +8,15 @@ import UserSignUp from "@/assets/icons/user-sign-up.svg";
 export default function Navbar() {
 
     return (
-        <nav className="py-5 bg-background w-full sticky top-0">
+        <nav className="py-5 bg-background w-full sticky top-0 z-20">
             <div className="container mx-auto px-12">
                 <div className="w-full flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
+                    <Link href={"/"} className="flex items-center space-x-3">
                         <Image alt="logo" className="w-8 h-8" src={Logo} />
                         <span className="font-work-sans-semibold text-lg text-white">
                             NFT Marketplace
                         </span>
-                    </div>
+                    </Link>
                     <div className="flex space-x-8 items-center text-base font-work-sans-semibold">
                         <Link className="text-white hover:opacity-80" href="/marketplace">
                             Marketplace

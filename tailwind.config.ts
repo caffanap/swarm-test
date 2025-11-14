@@ -9,19 +9,31 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			"work-sans": ['"WorkSansRegular"', "sans-serif"],
+			"work-sans-light": ['"WorkSansLight"', "sans-serif"],
+			"work-sans-italic": ['"WorkSansItalic"', "sans-serif"],
+			"work-sans-semibold": ['"WorkSansSemiBold"', "sans-serif"],
+			"work-sans-bold": ['"WorkSansBold"', "sans-serif"],
+			"work-sans-extrabold": ['"WorkSansExtraBold"', "sans-serif"],
+		},
   		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
+			  card: {
+				  DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
+			},
+			popover: {
+				DEFAULT: 'hsl(var(--popover))',
+				foreground: 'hsl(var(--popover-foreground))'
+			},
+			foreground: {
+				DEFAULT: '#3B3B3B'
+			},
+			background: {
+				DEFAULT: "#2B2B2B"
+			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: '#A259FF',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {

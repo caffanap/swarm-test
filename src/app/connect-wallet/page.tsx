@@ -1,0 +1,8 @@
+export default function ConnectWalletPage() {
+    
+    return (
+        <div>
+            Connect Wallet
+        </div>
+    )
+}
